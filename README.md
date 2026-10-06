@@ -10,8 +10,7 @@ uzyskania przychodu (PDF).
 (zawsze najnowsza wersja)
 
 Wszystkie wersje i lista zmian: [Releases](https://github.com/pzukowicz/oswiadczenie-KUP-releases/releases).
-Przy każdej wersji jest też `JiraCzasPracy.exe`, który działa bez instalacji, oraz `SHA256SUMS.txt`
-z sumami kontrolnymi plików.
+Przy każdej wersji jest też `SHA256SUMS.txt` z sumą kontrolną instalatora.
 
 ## Instalacja
 
@@ -28,9 +27,13 @@ w PDF zapisuje zainstalowany Microsoft Word; bez Worda aplikacja zapisze plik .d
 
 ## Aktualizacja
 
-Gdy jest nowsza wersja, aplikacja pokaże przy starcie link „pobierz” w pasku stanu. Pobierz nowy
-instalator i uruchom go. Ustawienia i historia oświadczeń zostają. Zainstalowaną wersję widać w zakładce
-**Konfiguracja**, po prawej stronie. Link obok prowadzi do listy wersji.
+Gdy jest nowsza wersja, aplikacja pobiera ją przy starcie w tle (i sprawdza sumę kontrolną), a w pasku
+stanu pokazuje „Wersja X pobrana – zaktualizuj teraz”. Kliknij i potwierdź – aplikacja zamknie się,
+zainstaluje aktualizację i uruchomi się ponownie. Ustawienia i historia oświadczeń zostają.
+
+Gdyby pobranie się nie udało (np. blokada w firmie), zamiast tego pojawi się link „pobierz”: pobierz
+nowy instalator i uruchom go – zainstaluje się na starą wersję. Zainstalowaną wersję widać
+w zakładce **Konfiguracja**, po prawej stronie. Link obok prowadzi do listy wersji.
 
 ## Pierwsze uruchomienie
 
@@ -54,7 +57,7 @@ e-mail, dane pracownika i przełożonego, urlopy, zaznaczenia spotkań. API toke
 pracownika i link do kalendarza są zaszyfrowane (Windows DPAPI – odczyta je tylko Twoje konto
 Windows). Kopie wygenerowanych oświadczeń (zakładka Historia) leżą w
 `%APPDATA%\JiraCzasPracy\Oświadczenia`. Aplikacja tylko czyta dane z Jiry i wysyła token wyłącznie
-pod wpisany adres Jiry. Przy starcie sprawdza na GitHubie, czy jest nowsza wersja – bez żadnych
-Twoich danych.
+pod wpisany adres Jiry. Przy starcie sprawdza na GitHubie, czy jest nowsza wersja, i pobiera ją
+stamtąd – bez wysyłania żadnych Twoich danych.
 
 Przy odinstalowaniu (Ustawienia Windows → Aplikacje) aplikacja zapyta, czy usunąć też ustawienia.
