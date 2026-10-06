@@ -27,9 +27,9 @@ w PDF zapisuje zainstalowany Microsoft Word; bez Worda aplikacja zapisze plik .d
 
 ## Aktualizacja
 
-Gdy jest nowsza wersja, aplikacja pobiera ją przy starcie w tle (i sprawdza sumę kontrolną), a w pasku
-stanu pokazuje „Wersja X pobrana – zaktualizuj teraz”. Kliknij i potwierdź – aplikacja zamknie się,
-zainstaluje aktualizację i uruchomi się ponownie. Ustawienia i historia oświadczeń zostają.
+Gdy jest nowsza wersja, aplikacja pokaże w pasku stanu „Dostępna nowa wersja X – zaktualizuj”.
+Kliknij i potwierdź – aplikacja pobierze nową wersję (i sprawdzi jej sumę kontrolną), zamknie się,
+zainstaluje ją i uruchomi się ponownie. Ustawienia i historia oświadczeń zostają.
 
 Gdyby pobranie się nie udało (np. blokada w firmie), zamiast tego pojawi się link „pobierz”: pobierz
 nowy instalator i uruchom go – zainstaluje się na starą wersję. Zainstalowaną wersję widać
